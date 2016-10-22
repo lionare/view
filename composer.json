@@ -1,0 +1,26 @@
+{
+    "name": "lionare/view",
+    "description": "Lionare view component.",
+    "keywords": [ "Lionare", "View" ],
+    "license": "MIT",
+    "type": "library",
+    "require": {
+        "lionar/agreements": "*",
+        "php": ">=5.6.4",
+        "xiaoler/blade": "*"
+    },
+    "require-dev": {
+        "lionar/testing": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "View\\": "source"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "View\\Tests\\": "tests"
+        }
+    },
+    "minimum-stability": "dev"
+}
