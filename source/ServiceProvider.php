@@ -33,5 +33,11 @@ class ServiceProvider extends BaseServiceProvider
 
 			return $factory;
 		} );
+
+		$this->application->share ( Map::class, function ( )
+		{
+			$mapping = configuration_path ( ) . '/view/map.php';
+			return new Map ( $mapping );
+		} );
 	}
 }
