@@ -15,9 +15,9 @@ class ServiceProvider extends BaseServiceProvider
 {
 	public function register ( )
 	{
-		$this->application->bind ( Engine::class, function ( Factory $factory, Map $map )
+		$this->application->bind ( Engine::class, function ( Factory $factory )
 		{
-			return new Engine ( $factory, $map );
+			return new Engine ( $factory );
 		} );
 
 		$this->application->share ( 'Xiaoler\\Blade\\Factory', function ( Configuration $configuration )

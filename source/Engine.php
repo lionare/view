@@ -15,6 +15,6 @@ class Engine implements \Agreed\Technical\View\Engine
 
 	public function make ( $page, array $arguments = array ( ) )
 	{
-		echo $this->blade->make ( $template, $arguments );
+		echo $this->blade->make ( $page, $arguments );
 	}
 }
